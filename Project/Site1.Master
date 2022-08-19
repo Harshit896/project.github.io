@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Project.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="Title" runat="server">
+    </asp:ContentPlaceHolder>
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
+</head>
+    <body>
+       <form id="form2" runat="server">
+        <div class="wrapper">
+            <div class="menu">
+                <ul>
+                    <li><a href="Default.aspx">Home</a></li>
+                    <li><a href="Default.aspx">About Us</a></li>
+                    <li><a href="content.aspx">Content</a></li>
+                    <li><a href="Login.aspx">Sign Out</a></li>
+                </ul>
+                <div class="clear"></div>
+                <div class="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+                    </div>
+                <div class="clear"></div>
+
+            </div>
+  <div class="footer">
+         <h2>Copyright@ACM-BHU.com</h2>
+ </div>
+</div>
+    </form>
+</body>
+
+</html>
